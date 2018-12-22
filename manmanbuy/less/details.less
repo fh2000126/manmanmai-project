@@ -1,0 +1,196 @@
+@import "base.less";
+body{
+    padding-top: 0.49rem;
+}
+#header {
+    width: 100vw;
+    height: .49rem;
+    background-color: #ff4e49;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    color: white;
+    .right {
+        width: 0.45rem;
+        padding: 0.05rem;
+        img {
+            width: 100%;
+        }
+    }
+    .left {
+        width: 0.45rem;
+        color: white;
+        line-height: 0.49rem;
+    }
+    h4 {
+        flex: 1;
+        padding: 0.1rem;
+    }
+}
+
+#main{
+    padding: 0.1rem;
+    .from{
+        height: 0.3rem;
+        line-height: 0.3rem;
+        color: black;
+        font-size: 0.12rem;
+    }
+    .jieshao{
+        padding: 0.1rem 0;
+        p{
+            font-size: 0.16rem;
+            width: 100%;
+            line-height: 0.24rem;
+            color: #606060;
+            word-break: break-all;
+        }
+        img{
+            float: right;
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+    }
+    .detail{
+        font-size: 0.16rem;
+            width: 100%;
+            line-height: 0.24rem;
+            color: #606060;
+    }
+    .lg{
+        margin-top: 0.15rem;
+    }
+    .city{
+       ul{
+        width: 1.2rem;
+        margin: 0 auto;
+        box-shadow:  0 0 1px #ccc;
+        font-size: 0.12rem;
+        li{
+            border-bottom: 1px dashed #ccc;
+            span{
+               
+                color: black;
+                strong{
+                    color: orange;
+                    float: right;
+                }
+            }
+        }
+       }
+    }
+    .buy{
+        margin: 0.15rem 0;
+        width: 100%;
+    }
+    .erweima{
+        img{
+            width: 100%;
+        }
+    }
+    .form{
+        position: relative;
+        box-shadow:  0 0 0.02rem pink;
+        .tit{
+            font-size: 0.17rem;
+        }
+      
+           
+           
+            textarea{
+                border: none;
+                overflow: hidden;
+                resize: none;
+
+            }
+            .ctrl{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: hotpink;
+                color: white;
+        }
+       
+    }
+    #newcomment{
+        font-size: 0.16rem;
+        line-height: 0.16rem;
+        margin-top: 0.1rem;
+    }
+    .list{
+        margin-top: 0.1rem;
+        ul{
+            li{
+                display: flex;
+                margin-bottom: 0.1rem;
+                padding: 0.05rem;
+                .userimg{
+                    img{
+                        width: .5rem;
+                        border-radius: 50%;
+                    }
+                }
+                .con{
+                  flex: 1;
+                  margin-left: 0.1rem;
+                  .name {
+                      font-size: 0.12rem;
+                      display: flex;
+                      .username{
+                          color: red;
+                      }
+                      .time{
+                          margin-left: .7rem;
+                      }
+                  }
+                  .content{
+                      margin-top: 0.1rem;
+                  }
+                }
+            }
+        }
+    }
+
+}
+
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    z-index: 999;
+    background-color: #232a34;
+    .footer-top {
+        border-top: .01rem solid #c4c4c4;
+        border-bottom: .01rem solid #c4c4c4;
+        height: 0.34rem;
+        line-height: 0.34rem;
+        display: flex;
+        a {
+            color: white;
+            display: block;
+            width: 33.33%;
+            height: 100%;
+            font-size: .14rem;
+            text-align: center;
+            border-left: .01rem solid #c4c4c4;
+            img {
+                display: inline-block;
+                width: 0.14rem;
+                margin-top: -0.02rem;
+            }
+        }
+    }
+    .footer {
+        a {
+            color: white;
+        }
+        text-align: center;
+        font-size: .12rem;
+        color: #666;
+        padding-top: 0.1rem;
+    }
+}

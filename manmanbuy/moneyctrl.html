@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="less/moneyctrl.less">
+    <script src="lib/less/less.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <header id="header">
+            <a href="index.html" class="fa fa-chevron-left left"> 
+            </a>
+            <h4>省钱控 - 最新优惠</h4>
+
+
+            <a href="#" class="right">
+                <img src="images/header_app.png" alt="">
+            </a>
+    
+    </header>
+    <main id="main">
+
+        <!--下拉刷新容器-->
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <!--数据列表-->
+          <ul class="mui-table-view mui-table-view-chevron">
+            
+          </ul>
+        </div>
+      </div>
+           
+    </main>
+     <footer id="footer">
+        <div class="footer-top">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">
+               返回首页
+           </a> 
+        </div>
+        <!-- <div class="footer">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer> -->
+   <script type="text/html" id="list">
+
+    {{ each result value }}
+    <li><a href="#" data-id="{{value.productId}}">
+               
+            <div class="img">{{@value.productImgSm}}</div>
+            
+            <div class="text">
+                <div class="title">
+                               <span>{{value.productName}}</span>  
+                               <span>{{value.productPinkage}}</span>      
+                </div>
+                <div class="from">
+                    <span>{{valueproductFrom}} | {{value.productTime}}</span>
+                    <div class="comment">
+                           {{value.productComCount}}
+                    </div>
+                </div>
+                
+            </div>
+        </a> </li>
+        {{ /each}}
+
+</script>
+ 
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/moneyctrl.js"></script>
+</body>
+
+</html>

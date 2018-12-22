@@ -1,0 +1,112 @@
+@import "base.less";
+#header {
+    width: 100vw;
+    height: .49rem;
+    background-color: #ff4e49;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    color: white;
+    .right {
+        width: 0.45rem;
+        padding: 0.05rem;
+        img {
+            width: 100%;
+        }
+    }
+    .left {
+        width: 0.45rem;
+        color: white;
+        line-height: 0.49rem;
+    }
+    h4 {
+        flex: 1;
+        padding: 0.1rem;
+    }
+}
+
+#main {
+    .mui-pull{
+        text-align: center;
+    }
+    background-color: #fff;
+	position: relative;
+	height: 100%;
+    ul {
+        background-color: #fff;
+        li {
+            background-color: #fff;
+			height: 1.28rem;
+            a {
+                display: flex;
+                .img {
+					width: 1rem;
+					padding: 10px;
+					img{
+						width: 100%;
+					}
+
+                }
+                .text {
+					padding: 20px ; 
+					flex: 1;
+					color: black;
+					font-size: 0.14rem;
+					.title{
+						width: 2rem;
+					}
+					.from{
+						margin-top: 0.13rem;
+						color: #ccc;
+						font-size: 0.13rem;
+						.comment{
+							
+							float: right;
+						}
+					}
+				}
+            }
+        }
+    }
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    z-index: 999;
+    background-color: #232a34;
+    .footer-top {
+        border-top: .01rem solid #c4c4c4;
+        border-bottom: .01rem solid #c4c4c4;
+        height: 0.34rem;
+        line-height: 0.34rem;
+        display: flex;
+        a {
+            color: white;
+            display: block;
+            width: 33.33%;
+            height: 100%;
+            font-size: .14rem;
+            text-align: center;
+            border-left: .01rem solid #c4c4c4;
+            img {
+                display: inline-block;
+                width: 0.14rem;
+                margin-top: -0.02rem;
+            }
+        }
+    }
+    .footer {
+        a {
+            color: white;
+        }
+        text-align: center;
+        font-size: .12rem;
+        color: #666;
+        padding-top: 0.1rem;
+    }
+}
